@@ -1,0 +1,76 @@
+nav {
+  background-color: #3333;
+  .container {
+    h4 {
+      font-family: "Times New Roman", Times, serif;
+      background: linear-gradient(to right, black, gray);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .offcanvas-body {
+      li {
+        list-style: disc;
+        a:hover {
+          color: #6085e4;
+          padding: 0 15px 0 15px;
+        }
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.filter {
+  select {
+    margin: 15px 0 0 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #3333;
+  }
+}
+.description{
+    h4{
+      color: #6085e4;
+    }
+}
+.main-container {
+  img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    &:nth-child(1),
+    &:nth-child(2) {
+      height: 350px;
+    }
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  .slide-card {
+    border: 1px solid lightgray;
+    &:hover {
+      box-shadow: 0 0 50px #4e4eda33;
+    }
+  }
+}
+.divide{
+  margin-top: 50px;
+}
+.footer{
+  background-color: #3333;
+  height: 220px;
+  .foot{
+    padding: 25px 0 0 0 ;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+      color: #6085e4;
+      padding: 0 0 0 25px;
+    }
+  }
+}

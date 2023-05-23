@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Charger Bracelet</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              data-bs-toggle="offcanvas"
+              data-bs-target="#menu"
+              class="nav-link active"
+              href=""
+              >Menu</a
+            >
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="menu">
+              <div class="offcanvas-header d-flex justify-content-center">
+                <h4>Our Menu</h4>
+              </div>
+              <div class="offcanvas-body">
+                <ul>
+                  <li><a href="#">Our Products</a></li>
+                  <li><a href="about.html">About us</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              data-bs-toggle="offcanvas"
+              data-bs-target="#bag"
+              class="nav-link active"
+              href=""
+              ><i class="fa-solid fa-bag-shopping fs-4"></i
+            ></a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="bag">
+              <div class="offcanvas-header d-flex justify-content-center">
+                <h4>My Bag</h4>
+              </div>
+              <div class="offcanvas-body">
+                <h3 class="text-center">your bag is empty</h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <h4><a href="#">CM Bracelets</a></h4>
+        <div class="empty"></div>
+      </div>
+    </nav>
+    <div class="description container mt-4">
+      <section>
+        <h4 class="text-center">Introducing the Charger Bracelet</h4>
+        <p>
+          a stylish and convenient accessory
+          that combines fashion with functionality. This innovative bracelet is
+          designed to keep you connected and powered up on the go.
+        </p>
+        <p>
+          The Charger Bracelet is more than just a fashion statement. It
+          features a hidden USB charging cable cleverly integrated into its
+          sleek and durable design. With this built-in charging cable, you can
+          effortlessly charge your devices wherever you are, without the hassle
+          of carrying around tangled cords or searching for an available outlet.
+        </p>
+        <p>
+          Crafted with high-quality materials, the Charger Bracelet exudes
+          elegance and durability. It is available in a range of stylish
+          designs, colors, and sizes, making it suitable for both men and women.
+          Whether you're going to work, attending a social event, or traveling,
+          the Charger Bracelet seamlessly complements your outfit while
+          providing the functionality you need.
+        </p>
+        <p>
+          To use the Charger Bracelet, simply unfold the bracelet and connect
+          the USB end to your device. It supports a wide range of devices,
+          including smartphones, tablets, smartwatches, and more. The bracelet's
+          charging cable is compatible with various charging ports, including
+          Lightning, USB-C, and Micro-USB, ensuring compatibility with most
+          devices on the market.
+        </p>
+        <p>
+          Not only does the Charger Bracelet keep you connected, but it also
+          offers fast and reliable charging. The high-quality charging cable
+          provides efficient power transfer, allowing you to charge your devices
+          quickly and conveniently. Say goodbye to low battery anxiety and never
+          miss an important call, message, or opportunity again.
+        </p>
+        <p>
+          The Charger Bracelet is not only practical but also makes for a
+          perfect gift for tech-savvy individuals or anyone who values both
+          style and functionality. It is a versatile accessory that seamlessly
+          blends into any lifestyle, whether you're a busy professional, a
+          frequent traveler, or a fashion enthusiast.
+        </p>
+        <p>
+          Stay connected, stay powered up, and make a statement with the Charger
+          Bracelet. Experience the perfect fusion of fashion and functionality.
+          Order yours today and take the convenience of charging with you
+          wherever you go.
+        </p>
+      </section>
+    </div>
+    <div class="filter">
+      <select id="color" onclick="filterByColorOption()">
+        <option value="all">All</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="brown">Brown</option>
+      </select>
+    </div>
+    <div class="container main-container">
+      <div class="slideshow-all d-flex justify-content-around">
+        <!-- black -->
+        <div class="slide-card" data-color="black">
+          <button onclick="changeImageToLeft(1)">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <a href="pay.html"><img id="slideshow-image1" src="./images/black-black.jpg" alt="" /></a>
+          <button onclick="changeImageToRight(1)">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- white -->
+        <div class="slide-card" data-color="white">
+          <button onclick="changeImageToLeft(2)">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <a href="pay.html"><img id="slideshow-image2" src="./images/white-gold-up.jpg" alt="" /></a>
+          <button onclick="changeImageToRight(2)">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- brown -->
+        <div class="slide-card" data-color="brown">
+          <button onclick="changeImageToLeft(3)">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <a href="pay.html"><img id="slideshow-image3" src="./images/brown-gold.jpg" alt="" /></a>
+          <button onclick="changeImageToRight(3)">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="divide"></div>
+    <div class="footer">
+      <section class="container foot">
+        <h5>Terms and Conditions</h5>
+        <div class="row mt-4">
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="shopping.html">Shopping Policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
+  <script src="app.js"></script>
+</html>
